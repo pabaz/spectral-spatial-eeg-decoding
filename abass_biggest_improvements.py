@@ -64,5 +64,5 @@ df_improvements = pd.DataFrame(improvements)
 df_sorted = df_improvements.sort_values(by='Delta', ascending=False).head(10)
 
 # === Print as table ===
-print("\n🔥 TOP 10 IMPROVEMENTS (DeepConvNet vs EEGNet)\n")
+print("\n TOP 10 IMPROVEMENTS (DeepConvNet vs EEGNet)\n")
 print(df_sorted[['Subject', 'Stimulus', 'Metric', 'EEGNet', 'DeepConvNet', 'Delta']].to_string(index=False, float_format="%.2f"))
